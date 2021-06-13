@@ -2,3 +2,5 @@ jpabook/jpashop/Hello.java
  jpabook.jpashop.Hello
 jpabook/jpashop/JpashopApplication.java
  jpabook.jpashop.JpashopApplication
+jpabook/jpashop/HelloController.java
+ jpabook.jpashop.HelloController
