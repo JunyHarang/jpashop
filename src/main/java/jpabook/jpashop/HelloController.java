@@ -7,10 +7,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class HelloController {
 
-    @GetMapping("hello")
+    @GetMapping
+// Model에 Data를 실어서 View에 넘길 수 있다. data라는 Key에 값을 hello로 넘기겠다는 의미
     public String hello(Model model) {
-        // 이름이 data이고, 값이 hello!!인 것을 model에게 속성으로 만들어서 준다.
-        model.addAttribute("data","hello!!");
+        model.addAttribute("data", "hello!!");
+
+        // 여기서 return은 화면 이름(hello.html)이 된다.
         return "hello";
     }
 }
