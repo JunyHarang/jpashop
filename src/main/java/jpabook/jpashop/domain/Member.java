@@ -12,7 +12,7 @@ import java.util.List;
 @Setter
 public class Member {
 
-    @Id
+    @Id         // primaryKey 설정
     // GeneratedValue는 DB에 시퀀스 넘버를 만들어 주는 것
     @GeneratedValue
     @Column(name = "member_id")
