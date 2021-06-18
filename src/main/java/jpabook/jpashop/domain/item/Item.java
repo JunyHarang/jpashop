@@ -1,10 +1,8 @@
 package jpabook.jpashop.domain.item;
 
 import jpabook.jpashop.domain.Category;
-<<<<<<< HEAD
-import jpabook.jpashop.exception.NotEnoughtStockException;
-=======
->>>>>>> a3b9ba13a6ab2a70dfc0164daa8826a852003061
+import jpabook.jpashop.exception.NotEnoughStockException;
+
 import lombok.Getter;
 import lombok.Setter;
 
@@ -33,7 +31,6 @@ public abstract class Item {
     @ManyToMany(mappedBy = "items")
     private List<Category> categories = new ArrayList<>();
 
-<<<<<<< HEAD
     // 비즈니스 로직
 
     /**
@@ -54,13 +51,10 @@ public abstract class Item {
         int restStock = this.stockQuantity - quantity;
 
         if (restStock < 0) {
-            throw new NotEnoughtStockException("제고 수량이 0보다 작을 수 없습니다!");
+            throw new NotEnoughStockException("제고 수량이 0보다 작을 수 없습니다!");
         }
 
         this.stockQuantity = restStock;
     } // removeStock 끝
 
 } // Class 끝
-=======
-}
->>>>>>> a3b9ba13a6ab2a70dfc0164daa8826a852003061

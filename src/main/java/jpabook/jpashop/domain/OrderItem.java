@@ -1,13 +1,9 @@
 package jpabook.jpashop.domain;
 
 import jpabook.jpashop.domain.item.Item;
-<<<<<<< HEAD
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-=======
-import lombok.Getter;
->>>>>>> a3b9ba13a6ab2a70dfc0164daa8826a852003061
 import lombok.Setter;
 
 import javax.persistence.*;
@@ -16,10 +12,8 @@ import static javax.persistence.FetchType.*;
 
 @Entity
 @Getter @Setter
-<<<<<<< HEAD
 @NoArgsConstructor(access = AccessLevel.PROTECTED)      // 기본 생성자를 외부에서 함부로 쓸 수 없게 막음
-=======
->>>>>>> a3b9ba13a6ab2a70dfc0164daa8826a852003061
+
 public class OrderItem {
 
     @Id @GeneratedValue
@@ -37,7 +31,6 @@ public class OrderItem {
     private int orderPrice; // 주문 당시 주문 가격
 
     private int count; // 주문 당시 주문 수량
-<<<<<<< HEAD
 
     public static OrderItem createOrderItem(Item item, int orderPrice, int count) { /* 생성 Method */
         OrderItem orderItem = new OrderItem();
@@ -61,6 +54,5 @@ public class OrderItem {
     public int getTotalPrice() { /* 조회 로직 (주문 상품 전체 가격 조회) */
         return getOrderPrice() * getCount();
     }
-=======
->>>>>>> a3b9ba13a6ab2a70dfc0164daa8826a852003061
+
 } // Class 끝
