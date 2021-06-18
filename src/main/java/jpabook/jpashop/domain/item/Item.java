@@ -1,7 +1,10 @@
 package jpabook.jpashop.domain.item;
 
 import jpabook.jpashop.domain.Category;
+<<<<<<< HEAD
 import jpabook.jpashop.exception.NotEnoughtStockException;
+=======
+>>>>>>> a3b9ba13a6ab2a70dfc0164daa8826a852003061
 import lombok.Getter;
 import lombok.Setter;
 
@@ -30,6 +33,7 @@ public abstract class Item {
     @ManyToMany(mappedBy = "items")
     private List<Category> categories = new ArrayList<>();
 
+<<<<<<< HEAD
     // 비즈니스 로직
 
     /**
@@ -57,3 +61,6 @@ public abstract class Item {
     } // removeStock 끝
 
 } // Class 끝
+=======
+}
+>>>>>>> a3b9ba13a6ab2a70dfc0164daa8826a852003061

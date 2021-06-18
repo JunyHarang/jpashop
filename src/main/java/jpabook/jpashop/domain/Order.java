@@ -1,10 +1,13 @@
 package jpabook.jpashop.domain;
 
+<<<<<<< HEAD
 import lombok.AccessLevel;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+=======
+>>>>>>> a3b9ba13a6ab2a70dfc0164daa8826a852003061
 import javax.persistence.*;
 import java.time.LocalDateTime;
 import java.util.ArrayList;
@@ -13,8 +16,11 @@ import java.util.List;
 import static javax.persistence.FetchType.*;
 
 @Entity
+<<<<<<< HEAD
 @Getter @Setter
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
+=======
+>>>>>>> a3b9ba13a6ab2a70dfc0164daa8826a852003061
 @Table(name = "orders")     // Table명 선언
 public class Order {
 
@@ -71,6 +77,7 @@ public class Order {
     
     // == 연관관계 Method 끝
 
+<<<<<<< HEAD
     public static Order createOrder(Member member, Delivery delivery, OrderItem... orderItems) { /* 생성 Method */
         Order order = new Order();
         order.setMember(member);
@@ -112,4 +119,6 @@ public class Order {
         return totalPrice;
     } // getTotalPrice 끝
 
+=======
+>>>>>>> a3b9ba13a6ab2a70dfc0164daa8826a852003061
 }// Class 끝
